@@ -49,27 +49,15 @@ nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 " Disable audible bell because it's annoying.
 set noerrorbells visualbell t_vb=
 
-" Enable mouse support. You should avoid relying on this too much, but it can
-" sometimes be convenient.
-set mouse+=a
-
-" Try to prevent bad habits like using the arrow keys for movement. This is
-" not the only possible bad habit. For example, holding down the h/j/k/l keys
-" for movement, rather than using more efficient movement commands, is also a
-" bad habit. The former is enforceable through a .vimrc, while we don't know
-" how to prevent the latter.
-" Do this in normal mode...
-nnoremap <Left>  :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up>    :echoe "Use k"<CR>
-nnoremap <Down>  :echoe "Use j"<CR>
-
 
 let g:airline_powerline_fonts = 1
 
 call plug#begin()
 
 "Plug 'sonph/onehalf',{'rtp': 'vim' }"
+Plug 'vim-airline/vim-airline'     " 状态栏增强
+Plug 'vim-airline/vim-airline-themes'  " 状态栏主题
+Plug 'mhinz/vim-startify'          " 个性化启动页
 
 call plug#end()
 
@@ -88,3 +76,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
+" 状态栏设置（airline）
+let g:airline_theme='onedark'  " 主题匹配
+let g:airline#extensions#tabline#enabled = 1  " 显示标签页
+let g:airline_powerline_fonts = 1  " 使用 Powerline 符号（需安装字体）
