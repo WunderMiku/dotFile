@@ -82,8 +82,8 @@ let g:airline_theme='onedark'  " 主题匹配
 let g:airline#extensions#tabline#enabled = 1  " 显示标签页
 let g:airline_powerline_fonts = 1  " 使用 Powerline 符号（需安装字体）
 
-set tabstop=4  " Tab 显示为 4 个空格
-set shiftwidth=4  " 缩进宽度设为 4
+set tabstop=2  " Tab 显示为 2 个空格
+set shiftwidth=2  " 缩进宽度设为 2
 
 
 " https://raw.githubusercontent.com/neoclide/coc.nvim/master/doc/coc-example-config.vim
