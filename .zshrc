@@ -146,3 +146,14 @@ alias zshrc='vim ~/.zshrc'
 alias szshrc='source ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
 alias dc='cd'
+alias xc="xclip -sel clip"
+alias xv='xclip -sel clip -o'
+
+export AM_HOME=/home/misuzu/ysyx-workbench/abstract-machine
+export NEMU_HOME=/home/misuzu/ysyx-workbench/nemu
+
+export NPC_HOME=/home/misuzu/ysyx-workbench/npc
+export NVBOARD_HOME=/home/misuzu/ysyx-workbench/nvboard
+export PATH="/home/misuzu/oss-cad-suite/bin:$PATH"
+
+
